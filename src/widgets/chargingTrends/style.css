@@ -64,3 +64,21 @@
   font-size: 14px;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+ .date{
+  padding: 0.5rem 0;
+ }
+ .date p{
+  width: 3rem;
+ }
+ .time{
+  justify-content: center !important;
+ }
+ .time div{
+  width: 94%;
+ }
+ .apply{
+  margin: 0.5rem;
+ }
+}
+

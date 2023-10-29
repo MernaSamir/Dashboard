@@ -15,11 +15,11 @@ export default function ChargingTrends() {
             <p className="head">Timeframe</p>
             <Selectbox options={[{ value: "today", label: "Today" }]} />
           </div>
-          <div>
+          <div className="date">
             <p>From</p>
             <DatePicker />
           </div>{" "}
-          <div>
+          <div className="date">
             <p>To</p>
             <DatePicker />
           </div>
