@@ -1,0 +1,52 @@
+.rightCards {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ticketHeader{
+    margin-bottom: 1rem;
+  }
+.ticketCont {
+  border-radius: 8px;
+  border: 1px solid var(--e-9-e-9-e-9, #e9e9e9);
+  background: #fefefe;
+  padding: 1REM;
+  margin-bottom: 0.5rem;
+  
+}
+.ticketCont div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.ticketCont div div {
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+.ticketCont div p {
+  color: var(--typo-2, rgba(29, 35, 55, 0.7));
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-weight: 400;
+}
+.ticketCont .headerT {
+  color: var(--typo-1, #1d2337);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+
+}
+.ticketCont .subHeaderT
+ {
+  color: var(--typo-2, rgba(29, 35, 55, 0.7));
+  font-family: Open Sans;
+  font-size: 10px;
+  font-weight: 400;
+}

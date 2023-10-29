@@ -1,0 +1,79 @@
+.afterHeader{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    justify-content: space-between;
+}
+.infosContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.userInfo {
+  flex-flow: column-reverse;
+  justify-content: center;
+  align-items: baseline;
+  display: flex;
+}
+.infoLeft {
+  color: var(--typo-2, rgba(29, 35, 55, 0.7));
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.energy {
+  color: #11a1fd !important;
+
+  font-family: Open Sans;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.info div p {
+  text-align: right;
+}
+.info div p:first-child {
+  color: #1d2337;
+
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+}
+.userInfo div p:first-child {
+  color: #1d2337;
+
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.info div p:nth-child(2) span:first-child {
+  color: var(--Active-Text, #0aad8f);
+
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.info div p:nth-child(2) span:nth-child(2) {
+  color: #1d2337;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

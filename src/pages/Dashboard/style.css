@@ -1,0 +1,51 @@
+.rightContent {
+  background-color: #f3f7f9;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.dashHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.dashHeader p:first-child {
+  color: var(--1-d-2337, #1d2337);
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.dashHeader p:nth-child(2) {
+  color: var(--1-d-2337, #1d2337);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 0.7;
+}
+.dashBody {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-column-gap: 10px;
+}
+.upCards {
+  display: grid;
+  grid-template-columns: 69% 29%;
+  grid-column-gap: 10px;
+}
+.downCards {
+  display: grid;
+  grid-template-columns: 34% 34% 29%;
+  grid-column-gap: 10px;
+}
+.chargingTrends p {
+  color: var(--typo-1, #1d2337);
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
