@@ -1,15 +1,15 @@
 import { map } from "lodash";
 import React from "react";
 import PieChart from "../../components/card/pieChart";
-import TinyAreaChart from "../../components/card/chargingRevenue";
-import ChargingSession from "../../components/card/chargingSession";
+import TinyAreaChart from "../../components/card/tinyArea";
+import ChargingSession from "../../components/card/basicColumn";
 import Card from "../../components/card";
 import Stations from "../../assets/stations.svg";
 import Charging from "../../assets/charging.svg";
 import Energy from "../../assets/energy.svg";
 import ChargingS from "../../assets/chargingSession.svg";
 import Users from "../../assets/users.svg";
-
+import './style.css'
 export default function Statistics() {
   const upCards = [
     { name: "Stations", icon: Stations, comp: <PieChart /> },

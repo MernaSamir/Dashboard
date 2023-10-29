@@ -1,12 +1,11 @@
 import React from 'react'
 import Header from './commonHeader'
 import './style.css'
-const Layout=({children})=> {
-    
+const Layout=(props)=> {    
   return (
     <div className='layout'>
-        <Header></Header>
-        <main className="content">{children}</main>
+        <Header nodes={props.nodes}/>
+        <main className="content">{props.children}</main>
 
         
     </div>

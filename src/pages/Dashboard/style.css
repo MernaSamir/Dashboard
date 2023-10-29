@@ -28,19 +28,10 @@
 }
 .dashBody {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 74% 25%;
   grid-column-gap: 10px;
 }
-.upCards {
-  display: grid;
-  grid-template-columns: 69% 29%;
-  grid-column-gap: 10px;
-}
-.downCards {
-  display: grid;
-  grid-template-columns: 34% 34% 29%;
-  grid-column-gap: 10px;
-}
+
 .chargingTrends p {
   color: var(--typo-1, #1d2337);
   font-family: Open Sans;
@@ -48,4 +39,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media (max-width: 768px) {
+  .dashBody {
+    grid-template-columns: 100%; /* Use a single column for small screens */
+  }
 }

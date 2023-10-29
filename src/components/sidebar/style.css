@@ -6,7 +6,6 @@
   padding-top: 1rem;
   /* gap: 16px; */
   flex-shrink: 0;
-  width: 250px;
 }
 .main,.child {
   margin-bottom: 1rem;
@@ -33,7 +32,6 @@ line-height: 24px; /* 171.429% */
   color: var(--2-a-317-d, #2A317D);
 font-weight: 700;
 width: 80%;
-display: inline-block;
 margin: 0;
 
 }

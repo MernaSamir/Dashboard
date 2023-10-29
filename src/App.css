@@ -1,8 +1,34 @@
-
-
-.home{
-display: flex;
+.home {
+  display: grid;
+  grid-template-columns: 20% 79%;
+  grid-column-gap: 10px;
 }
-p{
+p {
   margin: 0;
 }
+.soon {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--2-a-317-d, #2A317D);
+  font-family: PP Agrandir Variable;
+  font-weight: 617;
+}
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 100%; /* Use a single column for small screens */
+  }
+  .home .side {
+    display: none;
+  }
+}
+
+/* @media (max-width: 1200px) {
+  .home {
+    display: grid;
+    grid-template-columns: 14% 80%;
+    grid-column-gap: 10px;  }
+} */

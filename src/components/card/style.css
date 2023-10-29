@@ -21,3 +21,14 @@ font-family: Open Sans;
 font-size: 1rem;
 font-weight: 600;
 }
+.responsive-column {
+    height: 80%;
+    width: 100%;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .responsive-column {
+      width: 100%; /* Adjust the width for small screens as needed */
+    }
+  }

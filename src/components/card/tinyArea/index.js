@@ -43,7 +43,7 @@ const TinyAreaChart = ({ today, month, className, noSubHeader, infoClass, infoCo
           </div>
         </div>
       </div>
-      <TinyArea {...config} style={{ height: "35%" }} />
+      <TinyArea {...config} className="tinyArea"  />
     </div>
   );
 };

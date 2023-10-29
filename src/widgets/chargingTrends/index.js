@@ -3,7 +3,7 @@ import "./style.css";
 import Selectbox from "../../components/selectbox";
 import DatePicker from "../../components/datePicker";
 import { Button } from "antd";
-import ChargingSession from "../../components/card/chargingSession";
+import ChargingSession from "../../components/card/basicColumn";
 
 export default function ChargingTrends() {
   return (

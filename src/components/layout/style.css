@@ -4,6 +4,24 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
   display: flex;
   padding: 16px 24px;
-  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
+}
+.header div{
+  display: flex;
+  align-items: center;
+}
+.header div button{
+  margin-right: 10px;
+}
+.header p{
+  color: var(--2-a-317-d, #2A317D);
+  font-family: PP Agrandir Variable;
+  font-size: 24px;
+  font-weight: 617;
+}
+ @media (min-width: 769px) {
+  .header div button {
+    display: none;/* Use a single column for small screens */
+  }
 }

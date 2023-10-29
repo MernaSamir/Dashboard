@@ -6,41 +6,38 @@ import Dashboard from "./pages/Dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-  const CommingSoon = () => <div>Comming Soon!!</div>;
-
+  const ComingSoon = () => <div className="soon">Coming Soon!!</div>;
 
   const dashboard = [
-    { name: "Dashboard", component: <Dashboard />, link:'/' },
+    { name: "Dashboard", component: <Dashboard />, link: "/" },
     {
       name: "Management",
+      link: "/properties",
       children: [
-        { name: "Properties" },
-        { name: "Stations" },
-        { name: "App Users" },
-        { name: "Admin Roles" },
+        { name: "Properties", link: "/properties" },
+        { name: "Stations", link: "/stations" },
+        { name: "App Users", link: "/users" },
+        { name: "Admin Roles", link: "/admin-roles" },
       ],
     },
-    { name: "Statistics & Reports" },
-    { name: "Support Tickets" },
+    { name: "Statistics & Reports", link: "/reports" },
+    { name: "Support Tickets", link: "/tickets" },
   ];
 
   return (
     <div className="App">
       <BrowserRouter>
-      <Layout>
-        <div className="home">
-          <Sidebar nodes={dashboard} ></Sidebar>
-          <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/comming" element={<CommingSoon />} />
-
-     
-      </Routes>
-
-          
-          {/* <Content selectedNode={selectedNode} /> */}
-        </div>
-      </Layout>
+        <Layout nodes={dashboard}>
+          <div className="home">
+            <div className="side">
+              <Sidebar nodes={dashboard}></Sidebar>
+            </div>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="*" element={<ComingSoon />} />
+            </Routes>
+          </div>
+        </Layout>
       </BrowserRouter>
     </div>
   );

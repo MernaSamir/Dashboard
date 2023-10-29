@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import './style.css'
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
-const TreeNode=({ node, level, onClick })=> {
+const TreeNode=({ node, level })=> {
+  const [active,setActive]= useState()
   const location = useLocation();
-console.log(location.path,location.pathname)
+console.log(active,node.name)
   const indent = "  ".repeat(level);
   return (
-    <div className={`${node.link&& location.pathname == node.link ? 'activeParent' : ''} ${level==0&&'linkParent'}`}>
-      <NavLink  to={node.link||'/comming'}  activeClassName="active"
+    <div key={node.name} className={`${!node.children&& location.pathname == node.link ? 'activeParent' : ''} ${level===0&&'linkParent'}`}>
+      <NavLink  to={node.link}  
       className={`${node.children ? "main" : "child"} `}
 
         style={{ marginLeft: `${level*15}px` }}>
@@ -18,7 +19,7 @@ console.log(location.path,location.pathname)
       {node.children && (
         <div >
           {node.children.map((child, index) => (
-            <TreeNode key={index} node={child} level={level + 1} onClick={onClick} />
+            <TreeNode key={index} node={child} level={level + 1} />
           ))}
         </div>
       )}

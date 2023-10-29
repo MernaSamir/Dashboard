@@ -1,0 +1,16 @@
+.upCards {
+    display: grid;
+    grid-template-columns: 69% 29%;
+    grid-column-gap: 10px;
+  }
+  .downCards {
+    display: grid;
+    grid-template-columns: 34% 34% 29%;
+    grid-column-gap: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .upCards,.downCards {
+      grid-template-columns: 100%; /* Use a single column for small screens */
+    }
+  }

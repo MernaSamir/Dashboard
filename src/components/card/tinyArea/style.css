@@ -1,3 +1,9 @@
+.tinyArea{
+  display:flex;
+  justify-content: center;
+   height: 35% !important;
+    width:100%
+}
 .afterHeader{
     padding-top: 1rem;
     display: flex;
@@ -49,7 +55,7 @@
   color: #1d2337;
 
   font-family: Open Sans;
-  font-size: 24px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 .userInfo div p:first-child {
@@ -76,4 +82,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (min-width: 1200px) {
+  .info div p:first-child,.userInfo div p:first-child{
+    font-size: 16px;
+  }
 }
