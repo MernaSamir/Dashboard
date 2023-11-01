@@ -9,11 +9,35 @@ import Charging from "../../assets/charging.svg";
 import Energy from "../../assets/energy.svg";
 import ChargingS from "../../assets/chargingSession.svg";
 import Users from "../../assets/users.svg";
-import './style.css'
+import "./style.css";
 export default function Statistics() {
   const upCards = [
-    { name: "Stations", icon: Stations, comp: <PieChart /> },
-    { name: "Charging Revenue", icon: Charging, comp: <TinyAreaChart /> },
+    {
+      name: "Stations",
+      icon: Stations,
+      besideHeader: (
+        <>
+          <p>
+            <span>348</span>
+            <span>Properties</span>
+          </p>
+          <p>
+            <span>1.318</span>
+            <span>Charging Stations</span>
+          </p>
+          <p>
+            <span>2700</span>
+            <span>Connectors (1500 AC - 1200 DC )</span>
+          </p>
+        </>
+      ),
+      comp: <PieChart />,
+    },
+    {
+      name: "Charging Revenue",
+      icon: Charging,
+      comp: <TinyAreaChart fill="#0FEE9F1A" />,
+    },
   ];
   const downCards = [
     {
@@ -24,6 +48,7 @@ export default function Statistics() {
           Today="1,621 kWh"
           month="1,210,619 kWh"
           className="energy"
+          fill="#d6e3fd"
         />
       ),
     },
@@ -32,27 +57,35 @@ export default function Statistics() {
       name: "Charging Sessions",
       icon: ChargingS,
       comp: (
-        <ChargingSession
-          data={[
-            {
-              x: "Week1",
-              y: "2k",
-            },
-            {
-              x: "Week2",
-              y: "4k",
-            },
-            {
-              x: "Week3",
-              y: "5k",
-            },
-            {
-              x: "Week4",
-              y: "4k",
-            },
-          ]}
-          color="#FF9A32"
-        />
+        <div className="sessionsCont">
+          <div className="sessionsInfo">
+            <p>7,221 Sessions</p>
+
+            <p className="infoLeft">This month</p>
+          </div>
+          <ChargingSession
+            data={[
+              {
+                x: "Week1",
+                y: "2k",
+              },
+              {
+                x: "Week2",
+                y: "4k",
+              },
+              {
+                x: "Week3",
+                y: "5k",
+              },
+              {
+                x: "Week4",
+                y: "4k",
+              },
+            ]}
+            color="#FF9A32"
+          height="60%"
+          />
+        </div>
       ),
     },
     {
@@ -65,14 +98,11 @@ export default function Statistics() {
           noSubHeader={true}
           infoClass="userInfo"
           infoContClass="infosContainer"
+          fill="#d6e3fd"
           // className="energy"
         />
       ),
-    
-      
     },
-    
-
   ];
   return (
     <div className="leftCards">

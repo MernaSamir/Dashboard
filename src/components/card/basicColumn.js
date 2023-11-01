@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Column } from '@ant-design/plots';
 
-export default function ChargingSession ({data, color}) {
+export default function ChargingSession ({data, color, height, yAxisTitle}) {
 
   const config = {
     data,
@@ -17,7 +17,7 @@ export default function ChargingSession ({data, color}) {
       },
     },
     minColumnWidth: 30,
-    maxColumnWidth: 30,
+    maxColumnWidth: 50,
     xAxis: {
       title: {
         text: '',
@@ -25,12 +25,12 @@ export default function ChargingSession ({data, color}) {
     },
     yAxis: {
       title: {
-        text: 'Num of Sessions',
+        text:yAxisTitle||'' ,
       },
     
     },
     color:color
 
   };
-  return <Column {...config} style={{height:"80%"}}/>;
+  return <Column {...config} style={{height:height|| "80%"}}/>;
 };

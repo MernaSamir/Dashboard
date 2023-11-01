@@ -16,11 +16,12 @@
 }
 .header p{
   color: var(--2-a-317-d, #2A317D);
-  font-family: PP Agrandir Variable;
   font-size: 24px;
   font-weight: 617;
+  font-family: PP Agrandir Variable;
+
 }
- @media (min-width: 769px) {
+ @media (min-width: 1200px) {
   .header div button {
     display: none;/* Use a single column for small screens */
   }

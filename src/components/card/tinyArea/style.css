@@ -5,7 +5,7 @@
     width:100%
 }
 .afterHeader{
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
     height: -webkit-fill-available;
@@ -16,9 +16,11 @@
   justify-content: space-between;
 }
 .info {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 10% 89%;
+  grid-column-gap: 40%;
+  
+  padding: 0.5rem 0;
 }
 .userInfo {
   flex-flow: column-reverse;
@@ -28,7 +30,6 @@
 }
 .infoLeft {
   color: var(--typo-2, rgba(29, 35, 55, 0.7));
-  font-family: Open Sans;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -42,34 +43,26 @@
 .energy {
   color: #11a1fd !important;
 
-  font-family: Open Sans;
   font-size: 20px !important;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 .info div p {
-  text-align: right;
+  text-align: left;
 }
 .info div p:first-child {
   color: #1d2337;
 
-  font-family: Open Sans;
   font-size: 1.25rem;
   font-weight: 700;
 }
 .userInfo div p:first-child {
   color: #1d2337;
-
-  font-family: Open Sans;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .info div p:nth-child(2) span:first-child {
   color: var(--Active-Text, #0aad8f);
-
-  font-family: Open Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -77,14 +70,23 @@
 }
 .info div p:nth-child(2) span:nth-child(2) {
   color: #1d2337;
-  font-family: Open Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-@media (min-width: 1200px) {
-  .info div p:first-child,.userInfo div p:first-child{
-    font-size: 16px;
+@media (max-width: 1200px) {
+  .info div p:first-child,.userInfo div p:first-child, .energy{
+    font-size: 16px !important;
   }
+  .info{
+    grid-column-gap: 33%  !important;
+
+  }
+}
+@media( max-height: 850px){
+  .info{
+  grid-column-gap: 20%  !important;
+  }
+
 }

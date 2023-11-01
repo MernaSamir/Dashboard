@@ -25,6 +25,13 @@ export default function Tickets() {
       subHeader:
         "This station has a screen with an unreadable display lorem ipsum..read more",
     },
+    {
+      status: "Solved",
+      time: "23 Aug 2023",
+      Header: "Plugged in but not charging",
+      subHeader:
+        "This station has a screen with an unreadable display lorem ipsum..read more",
+    },
   ];
   function getStatusStyle(status) {
     switch (status) {

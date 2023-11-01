@@ -1,7 +1,7 @@
 import React from "react";
 import { TinyArea } from "@ant-design/plots";
 import "./style.css";
-const TinyAreaChart = ({ today, month, className, noSubHeader, infoClass, infoContClass }) => {
+const TinyAreaChart = ({ today, month, className, noSubHeader, infoClass, infoContClass, fill }) => {
   const data = [
     264, 417, 438, 887, 309, 397, 550, 575, 563, 430, 525, 592, 492, 467, 513,
     546, 983, 340, 539, 243, 226, 192,
@@ -12,7 +12,8 @@ const TinyAreaChart = ({ today, month, className, noSubHeader, infoClass, infoCo
     data,
     smooth: true,
     areaStyle: {
-      fill: "#0FEE9F1A",
+       fill: fill ,
+       
     },
   };
   return (
@@ -24,7 +25,7 @@ const TinyAreaChart = ({ today, month, className, noSubHeader, infoClass, infoCo
             <p className={className}>{today || "3,821 EGP"}</p>
             {!noSubHeader && (
               <p>
-                <span>+2.3%</span>
+                <span>+2.3% </span>
                 <span>from yesterday</span>
               </p>
             )}

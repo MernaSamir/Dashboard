@@ -14,10 +14,9 @@ p {
   align-items: center;
   font-size: 2rem;
   color: var(--2-a-317-d, #2A317D);
-  font-family: PP Agrandir Variable;
   font-weight: 617;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .home {
     grid-template-columns: 100%; /* Use a single column for small screens */
   }

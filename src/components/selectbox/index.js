@@ -9,7 +9,7 @@ const Selectbox = ({options}) => {
   return <Select
     handleChange={handleChange}
     defaultValue={options[0].value}
-    style={{ width: "80%" }}
+    className="custom-label-style"
     allowClear
     options={options}
   />

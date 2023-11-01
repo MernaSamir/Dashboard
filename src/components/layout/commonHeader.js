@@ -4,6 +4,7 @@ import Profile from "../../assets/profile.svg";
 import { Drawer, Button } from "antd";
 import Sidebar from "../../components/sidebar";
 import Menu from "../../assets/menu.svg";
+import Right from '../../assets/chevron-right.svg'
 const Header = ({ nodes }) => {
   console.log(nodes, "nnnn");
   const [visible, setVisible] = useState(false);
@@ -35,6 +36,8 @@ const Header = ({ nodes }) => {
       </div>
       <div>
         <img src={Profile} alt="profile" />
+        <img src={Right} alt="arrow" />
+
       </div>
     </div>
   );

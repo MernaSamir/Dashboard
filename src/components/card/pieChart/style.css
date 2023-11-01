@@ -1,0 +1,40 @@
+.containerPie{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.custom-legend{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: ween;
+    align-items: center;
+    height: min-content;
+}
+.custom-legend p{
+color: #1D2337;
+font-size: 16px;
+font-weight: 600;
+display: block;
+width: 100%;
+margin-bottom: 1rem;
+}
+.legend-item{
+    display: flex;
+    align-items: center;
+    width: 7rem;
+    margin-bottom: 0.5rem;
+}
+.legend-icon{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    margin-right: 5px;
+}
+.legend-text{
+color: #1D2337;
+font-size: 12px;
+font-weight: 400;
+}

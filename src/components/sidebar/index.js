@@ -8,7 +8,7 @@ const TreeNode=({ node, level })=> {
 console.log(active,node.name)
   const indent = "  ".repeat(level);
   return (
-    <div key={node.name} className={`${!node.children&& location.pathname == node.link ? 'activeParent' : ''} ${level===0&&'linkParent'}`}>
+    <div key={node.name} className={`${!node.children&& location.pathname == node.link ? 'activeParent' : 'normal'} ${level===0&&'linkParent'}`}>
       <NavLink  to={node.link}  
       className={`${node.children ? "main" : "child"} `}
 
