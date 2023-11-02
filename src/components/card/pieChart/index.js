@@ -8,18 +8,20 @@ export default function PieChart() {
       value: 60,
     },
     {
-      type: "Inoperative",
-      value: 30,
+      type: "Suspended EVSE",
+      value: 10,
     },
-
     {
       type: "Available",
-      value: 15,
+      value: 10,
     },
+   
     {
-      type: "Suspended EVSE",
-      value: 15,
+      type: "Inoperative",
+      value: 20,
     },
+
+   
   ];
   const config = {
     appendPadding: 10,
@@ -57,7 +59,7 @@ export default function PieChart() {
     },
     autoFit: true,
 
-    color: ["#11A1FD", "#FF9A32", "#0FEE9F", "#CECECE"],
+    color: ["#11A1FD", "#CECECE", "#0FEE9F","#FF9A32"],
     tooltip: {
       formatter: (datum) => {
         console.log(datum,"ddddddddddddddd")
